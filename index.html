@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty HUT</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="">
+        <nav class=" w-[90%] mx-auto my-6">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <a class="btn btn-ghost normal-case text-xl">Tasty HUT</a>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-yellow-400  text-black border-none hover:bg-yellow-500">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="my-6">
+            <section
+                style="background: linear-gradient(rgba(0, 0, 0, 0.57),rgba(0, 0, 0, 0.226)),url(./images/banner_1.png); background-repeat: no-repeat; background-position: center; height:75vh; background-size: cover;">
+                <div class="flex justify-center items-center h-[75vh]">
+                    <div class=" px-6  flex flex-col justify-center items-center">
+                        <h1 class="text-6xl font-bold text-white text-center my-6">Taste Our Delicious <br> Best Foods
+                        </h1>
+                        <p class="text-white w-9/12 text-center mx-auto">There are many variations of passages of Lorem
+                            Ipsum available, but the majority have suffered alteration in some form, by injected humou.
+                        </p>
+                        <div class="form-control mt-6">
+                            <div class="input-group">
+                                <input type="text" placeholder=" Search any food" id="inputFeildValue"
+                                    class="input w-full outline-none" />
+                                <button id="searchBtn"
+                                    class="btn   bg-yellow-400  text-black border-none hover:bg-yellow-500 ">Search
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+    </header>
+   
+  
+    <main class=" w-[90%] mx-auto">
+        <section class="h-fit">
+            <h1 class=" text-center font-bold text-6xl my-16">Your Favourite Food</h1>
+        <div id="foodContainer" class="grid grid-cols-1 md:grid-cols-2  gap-7 mx-auto my-6"></div>
+    </section>
+
+    <section class="w-40 mx-auto mb-6">
+        <button id="showMoreBtn" class="btn bg-yellow-400  text-black border-none hover:bg-yellow-500">See More</button>
+    </section>
+
+    </main>
+    <footer style="background: rgba(255, 193, 7, 0.05);">
+        <section class=" w-[75%] mx-auto">
+            <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-16">
+                <div>
+                    <h3 class="text-3xl font-bold">Section</h3>
+                    <ul class="mt-6">
+                        <li class="mb-5"> <a href="">Home</a></li>
+                        <li class="mb-5"> <a href="">Features</a></li>
+                        <li class="mb-5"> <a href="">Pricing</a></li>
+                        <li class="mb-5"> <a href="">FAQs</a></li>
+                        <li class="mb-5"> <a href="">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold">Section</h3>
+                    <ul class="mt-6">
+                        <li class="mb-5"> <a href="">UIUX Design</a></li>
+                        <li class="mb-5"> <a href="">Product Design</a></li>
+                        <li class="mb-5"> <a href="">Back End Developer</a></li>
+                        <li class="mb-5"> <a href="">Front End Developer</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold">Section</h3>
+                    <ul class="mt-6">
+                        <li class="mb-5"> <a href="">FAQ</a></li>
+                        <li class="mb-5"> <a href="">Support</a></li>
+                        <li class="mb-5"> <a href="">Privacy Policy</a></li>
+                        <li class="mb-5"> <a href="">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold">Subscribe to our newsletter</h3>
+                    <p>There are many variations of passages of available, but the majority have suffered</p>
+                    <div class="form-control mt-6">
+                        <div class="input-group">
+                            <input type="text" placeholder=" Search any food" id="inputFeildValueForEmail"
+                                class="input w-full outline-none" />
+                            <button id="sumbitBtn"
+                                class="btn   bg-yellow-400  text-black border-none hover:bg-yellow-500">Search </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <input type="checkbox" id="my-modal-6" class="modal-toggle" />
+        <div id="mymdl" class="modal modal-bottom sm:modal-middle mx-auto">
+           
+            
+          </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
